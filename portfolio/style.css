@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(3 3 26);
+    box-sizing: border-box;
+}
+
+/* <!-- Header section Start --> */
+#menu {
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 2px;
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    div#menu {
+        left: 75%;
+        position: absolute;
+        top: 0;
+        margin: 28px;
+        display: block;
+        float: right;
+    }
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.icon .bar {
+    background-color: #fff;
+}
+
+.icon #bar1 {
+    transform: translateY(4px) rotate(-45deg);
+}
+
+.icon #bar3 {
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.icon #bar2 {
+    opacity: 0;
+}
+
+.nav {
+    margin: 0 0 0 60%;
+    display: flex;
+    cursor: pointer;
+    font-family: cursive;
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .nav {
+        padding: 0;
+        margin: 0 20px;
+        transition: 1s ease;
+        display: none;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .change {
+        background-color: #f55c47;
+        margin: 0;
+        position: absolute;
+        font-size: 30px;
+        top: 77px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.nav li a {
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .nav li a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.nav li a:hover {
+    color: #f55c47;
+}
+
+.nav li {
+    font-size: 23px;
+    margin: 15px;
+    list-style: none;
+}
+
+#nav li a i {
+    margin: 5px;
+}
+
+/* <!-- Header section End --> */
+
+/* <!-- Banner Section Start --> */
+.wrap {
+    width: 100%;
+    display: flex;
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .wrap {
+        width: 100%;
+        display: block;
+    }
+}
+
+.about {
+    color: #cfbdbd;
+    font-size: 26px;
+    width: 40%;
+    margin: 120px 0px 0px 76px;
+    line-height: 42px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .about {
+        color: #cfbdbd;
+        font-size: 16px;
+        width: 314px;
+        margin: 27px 33px 0px 33px;
+        line-height: 42px;
+    }
+}
+
+.image {
+    width: 421px;
+    margin: 130px 0 0 100px
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .image {
+        width: 314px;
+        margin: 100px 33px 0 33px;
+    }
+}
+
+button {
+    font-family: cursive;
+    margin: 20px 0 0 0;
+    background: wheat;
+    padding: 12px;
+    font-size: 21px;
+    border-bottom-left-radius: 12px;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    button {
+        padding: 5px;
+    }
+}
+
+button a:hover {
+    font-size: 21px;
+    border-bottom-left-radius: 12px;
+    color: red;
+}
+
+.icons {
+    color: #cfbdbd;
+    display: flex;
+    font-size: 31px;
+    margin: 40px 0 0 0px;
+}
+
+.icons i {
+    margin: 10px;
+}
+
+/* <!-- Banner Section End -->  */
+
+/* <!-- Footer Section start --> */
+.contact {
+    margin: 68px 0 0 0;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    font-family: cursive;
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .contact {
+        margin: 0px 0 0 0;
+        background: #d2dbe3
+    }
+}
+
+/* <!-- Footer Section End --> */
+.container1 {
+    background-color: black;
+    color: black;
+}
+
+.icons {
+    padding: 0px;
+}
+
+.icons i:hover {
+    transform: rotateZ(360deg);
+    transition-duration: 0.8s;
+}
